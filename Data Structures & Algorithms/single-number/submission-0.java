@@ -1,0 +1,9 @@
+class Solution {
+    public int singleNumber(final int[] nums) {
+        int xor = 0;
+        for (final int num : nums) {
+            xor ^= num;
+        }
+        return xor;
+    }
+}
